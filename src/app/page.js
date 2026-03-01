@@ -1,4 +1,5 @@
 import ContactForm from "@/components/ContactForm";
+import GallerySection from "@/components/GallerySection";
 import Hero from "@/components/Hero";
 import ServicesSection from "@/components/ServicesSection";
 import Testimonials from "@/components/Testimonials";
@@ -10,7 +11,9 @@ export default function Home() {
     <div>
       <Hero />
       <ServicesSection />
+
       <WhyChooseUs />
+      <GallerySection />
       <Testimonials />
       <ContactForm />
 
