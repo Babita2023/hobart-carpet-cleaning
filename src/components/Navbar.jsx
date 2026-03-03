@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         {/* Logo */}
         <Link href="/" className="font-bold text-lg text-blue-800">
-          Hobart Premium<br className="hidden sm:inline" /> Carpet Cleaning
+          Hobart Premium<br className="hidden sm:inline" /> Cleaning
         </Link>
 
         {/* Desktop Links */}
