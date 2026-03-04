@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Phone, Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -20,10 +21,19 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         {/* Logo */}
-        <Link href="/" className="font-bold text-lg text-blue-800">
-          Hobart Premium<br className="hidden sm:inline" /> Cleaning
-        </Link>
 
+        <Link href="/" className="flex items-center gap-2 ml-4">
+      <Image
+        src="/images/Hobart1.png" // matches public/image/Hobart1.png
+        alt="Hobart Premium Cleaning Logo"
+        width={40}
+        height={40}
+        className="object-contain"
+      />
+      <span className="font-bold text-lg text-blue-800">
+        Hobart Premium  Cleaning
+      </span>
+    </Link>
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center gap-6">
           {navLinks.map((l) => (
@@ -48,7 +58,7 @@ export default function Navbar() {
 
           <Link
             href="#contact"
-            className="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-900 transition-colors text-sm font-medium"
+            className="bg-orange-400 text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors text-sm font-medium"
           >
             Contact Us
           </Link>
@@ -87,7 +97,7 @@ export default function Navbar() {
 
           <Link
             href="#contact"
-            className="block bg-blue-800 text-white text-center py-2 rounded mt-2 text-sm font-medium hover:bg-blue-900 transition-colors"
+            className="block bg-orange-400 text-white text-center py-2 rounded mt-2 text-sm font-medium hover:bg-orange-600 transition-colors"
             onClick={() => setOpen(false)}
           >
             Free Quote

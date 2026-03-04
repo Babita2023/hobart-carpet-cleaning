@@ -7,7 +7,7 @@ const images = [
     { src: "/images/before-after-5.jpeg", alt: "Upholstery cleaning before and after results" },
      { src: "/images/before-after-6.jpeg", alt: "Pet stain carpet cleaning before and after" },
       { src: "/images/before-after-7.jpeg", alt: "Carpet cleaning before and after - deep stain removal" },
-      { src: "/images/before-after-8.png", alt: "Upholstery cleaning before and after results" },
+      { src: "/images/before-after-8.png", alt: "Carpet cleaning before and after results" },
 ];
 
 const GallerySection = () => (
