@@ -20,3 +20,12 @@ export default function Home() {
     </div>
   );
 }
+
+// export default function Home() {
+//   return (
+//     <div className="hero-gradient text-white p-10 rounded shadow-card">
+//       <h1>Hobart Premium Cleaning</h1>
+//       <p>Professional Carpet Cleaning in Hobart, Tasmania</p>
+//     </div>
+//   );
+// }
