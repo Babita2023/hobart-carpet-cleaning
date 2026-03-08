@@ -1,4 +1,4 @@
-// import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Droplets, Sofa, Home, PawPrint, Building2 } from "lucide-react";
 
 const services = [
