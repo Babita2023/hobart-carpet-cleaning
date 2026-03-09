@@ -1,11 +1,14 @@
-export default function Services() {
+ import ServiceSection from "@/components/ServicesSection";
+
+
+export const metadata = {
+  title: "Cleaning Services| Premium Carpet Cleaning Hobart",
+  description:
+    "Comprehensive cleaning solutions for homes and businesses across Hobart. ",
+};
+
+export default function ServicesSection() {
   return (
-    <div className="max-w-5xl mx-auto py-16">
-      <h2 className="text-4xl font-bold mb-6">Our Cleaning Services</h2>
-      <p>
-        We provide professional carpet, upholstery and end of lease cleaning
-        services across Hobart.
-      </p>
-    </div>
+   <ServiceSection />
   );
 }

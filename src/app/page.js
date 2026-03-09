@@ -1,6 +1,7 @@
 import ContactForm from "@/components/ContactForm";
 import GallerySection from "@/components/GallerySection";
 import Hero from "@/components/Hero";
+import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import Testimonials from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <AboutSection />
       <ServicesSection />
 
       <WhyChooseUs />

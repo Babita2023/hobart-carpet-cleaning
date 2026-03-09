@@ -21,9 +21,9 @@ const ServicesSection = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {services.map((s) => (
           <Card key={s.title} className="shadow-card hover:shadow-card-hover transition-shadow duration-300 border-0 bg-card">
-            <CardHeader className="items-center text-center">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
-                <s.icon className="w-7 h-7 text-primary" />
+            <CardHeader className=" flex flex-col items-center text-center gap-2">
+              <div className="w-14 h-14 rounded-xl bg-blue-100  flex items-center justify-center mb-2">
+                <s.icon className="w-7 h-7 text-blue-800 " />
               </div>
               <CardTitle className="text-lg">{s.title}</CardTitle>
               <CardDescription className="text-sm">{s.desc}</CardDescription>
