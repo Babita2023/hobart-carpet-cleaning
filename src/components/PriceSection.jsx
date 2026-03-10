@@ -15,7 +15,7 @@ const packages = [
       "Eco-friendly cleaning solutions"] },
 ];
 
-const PricingSection = () => (
+const PriceSection = () => (
   <section id="pricing" className="py-20 bg-card">
     <div className=" container mx-auto px-4">
       <div className="text-center mb-14">
@@ -54,4 +54,4 @@ const PricingSection = () => (
   </section>
 );
 
-export default PricingSection;
+export default PriceSection;
