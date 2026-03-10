@@ -6,6 +6,9 @@ import ServicesSection from "@/components/ServicesSection";
 import Testimonials from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
+import CTABanner from "@/components/CTABanner";
+// import Test from "@/components/Test";
+import PricingSection from "@/components/PriceSection";
 
 export default function Home() {
   return (
@@ -13,10 +16,12 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <ServicesSection />
-
+       {/* <Test /> */}
       <WhyChooseUs />
+      <CTABanner />
       <GallerySection />
       <Testimonials />
+      <PricingSection />
       <ContactForm />
 
     </div>
