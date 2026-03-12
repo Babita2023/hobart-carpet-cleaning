@@ -1,55 +1,56 @@
-export default function Test() {
+export default function TestColors() {
   return (
-    <div className="min-h-screen bg-background text-foreground flex items-center justify-center p-10">
+    <div className="p-10 space-y-8 bg-background text-foreground min-h-screen">
+      
+      <h1 className="text-3xl font-heading font-bold">
+        Tailwind Color Test
+      </h1>
 
-      <div className="grid gap-6 max-w-3xl">
+      {/* PRIMARY */}
+      <div className="space-y-3">
+        <p className="text-primary text-xl">Primary Text</p>
 
-        {/* Gradients */}
-        <div className="grid grid-cols-3 gap-4">
-          <div className="bg-hero h-24 rounded-lg shadow-card flex items-center justify-center text-white">
-            Hero
-          </div>
-
-          <div className="bg-section h-24 rounded-lg shadow-card flex items-center justify-center">
-            Section
-          </div>
-
-          <div className="bg-cta h-24 rounded-lg shadow-card flex items-center justify-center text-primary-background/90">
-            CTA
-          </div>
-        </div>
-
-        {/* Colors */}
-        <div className="grid grid-cols-3 gap-4">
-
-          <div className="bg-foreground/90 text-primary-foreground p-10 rounded-lg shadow-card">
-  Primary color box
-</div>
-
-          <div className="bg-secondary text-secondary-foreground p-6 rounded-lg shadow-card">
-            Secondary
-          </div>
-
-          <div className="bg-accent text-accent-foreground p-6 rounded-lg shadow-card">
-            Accent
-          </div>
-
-        </div>
-
-        {/* Card */}
-        <div className="bg-card text-card-foreground p-6 rounded-lg shadow-card hover:shadow-card-hover transition">
-          Card Background
-        </div>
-
-        {/* Border / Input */}
-        <div className="border border-border p-6 rounded-lg">
-          <input
-            className="border border-input rounded-md px-4 py-2 w-full"
-            placeholder="Input test"
-          />
-        </div>
-
+        <button className="bg-primary text-primary-foreground px-6 py-3 rounded-md">
+          Primary Button
+        </button>
       </div>
+
+      {/* SECONDARY */}
+      <div className="space-y-3">
+        <p className="text-secondary-foreground text-xl">
+          Secondary Text
+        </p>
+
+        <div className="bg-secondary p-6 rounded-md">
+          Secondary Background
+        </div>
+      </div>
+
+      {/* ACCENT */}
+      <div className="space-y-3">
+        <p className="text-accent text-xl">
+          Accent Text
+        </p>
+
+        <div className="bg-accent text-accent-foreground p-6 rounded-md">
+          Accent Background
+        </div>
+      </div>
+
+      {/* CARD */}
+      <div className="border border-border p-6 rounded-lg bg-card text-card-foreground shadow-md">
+        Card Example
+      </div>
+
+      {/* MUTED */}
+      <div className="bg-muted text-muted-foreground p-6 rounded-lg">
+        Muted Section
+      </div>
+
+      {/* DESTRUCTIVE */}
+      <button className="bg-destructive text-destructive-foreground px-6 py-3 rounded-md">
+        Delete Button
+      </button>
 
     </div>
   );
