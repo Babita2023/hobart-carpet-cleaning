@@ -112,6 +112,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color:hsl(var(--primary));
 } 
 
+.bg-primary-foreground{
+  background-color: hsl(var(--primary-foreground));
+}
+
  .bg-secondary {
   background-color: hsl(var(--secondary));
 }

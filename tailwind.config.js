@@ -55,10 +55,9 @@ const config = {
   input: "hsl(var(--input))",
   ring: "hsl(var(--ring))",
 
-  primary: {
-    DEFAULT: "hsl(var(--primary))",
-    foreground: "hsl(var(--primary-foreground))",
-  },
+  primary: "hsl(var(--primary))",
+  "primary-foreground" : "hsl(var(--primary-foreground))",
+  
 
   secondary: {
     DEFAULT: "hsl(var(--secondary))",
