@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className="bg-white text-gray-800">
         <Navbar />
         {children}
+         <Toaster />
         <Footer />
       </body>
     </html>

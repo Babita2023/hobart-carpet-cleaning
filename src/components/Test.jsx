@@ -1,56 +1,22 @@
-export default function TestColors() {
+export default function TestBackground() {
   return (
-    <div className="p-10 space-y-8 bg-background text-foreground min-h-screen">
+    <div className="min-h-screen bg-background text-foreground p-10 space-y-6">
       
-      <h1 className="text-3xl font-heading font-bold">
-        Tailwind Color Test
-      </h1>
-
-      {/* PRIMARY */}
-      <div className="space-y-3">
-        <p className="text-primary text-xl">Primary Text</p>
-
-        <button className="bg-primary text-primary-foreground px-6 py-3 rounded-md">
-          Primary Button
-        </button>
+       <div className="bg-primary text-primary-foreground p-6 rounded-lg">
+        This text should be WHITE on a blue background
       </div>
 
-      {/* SECONDARY */}
-      <div className="space-y-3">
-        <p className="text-secondary-foreground text-xl">
-          Secondary Text
-        </p>
-
-        <div className="bg-secondary p-6 rounded-md">
-          Secondary Background
-        </div>
+      <div className="bg-card text-card-foreground p-6 rounded-md border border-border">
+        Card Background
       </div>
 
-      {/* ACCENT */}
-      <div className="space-y-3">
-        <p className="text-accent text-xl">
-          Accent Text
-        </p>
-
-        <div className="bg-accent text-accent-foreground p-6 rounded-md">
-          Accent Background
-        </div>
+      <div className="bg-primary text-primary-foreground p-6 rounded-md">
+        Primary Section
       </div>
 
-      {/* CARD */}
-      <div className="border border-border p-6 rounded-lg bg-card text-card-foreground shadow-md">
-        Card Example
-      </div>
-
-      {/* MUTED */}
-      <div className="bg-muted text-muted-foreground p-6 rounded-lg">
-        Muted Section
-      </div>
-
-      {/* DESTRUCTIVE */}
-      <button className="bg-destructive text-destructive-foreground px-6 py-3 rounded-md">
-        Delete Button
-      </button>
+      <p className="text-muted-foreground">
+        Muted foreground text example
+      </p>
 
     </div>
   );

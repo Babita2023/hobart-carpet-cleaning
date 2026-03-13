@@ -116,6 +116,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: hsl(var(--secondary));
 }
 
+.bg-card{
+  background-color: hsl(var(--card));
+}
+
 .bg-accent {
   background-color: hsl(var(--accent));
 }
@@ -124,9 +128,17 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(var(--primary));
 }
 
+.text-primary-foreground{
+  color: hsl(var(--primary-foreground));
+}
+
 .text-accent {
   color: hsl(var(--accent));
 }
+.text-accent-foreground{
+  color:hsl(var(--accent-foreground))
+}
+
 
 .section-gradient {
   background: var(--section-gradient);

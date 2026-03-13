@@ -1,4 +1,4 @@
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/ContactSection";
 import GallerySection from "@/components/GallerySection";
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
@@ -9,6 +9,7 @@ import Image from "next/image";
 import CTABanner from "@/components/CTABanner";
 import Test from "@/components/Test";
 import PricingSection from "@/components/PriceSection";
+import ServiceAreas from "@/components/ServiceArea";
 
 export default function Home() {
   return (
@@ -16,14 +17,14 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <ServicesSection />
-       <Test />
+      <Test />
       <WhyChooseUs />
       <CTABanner />
       <GallerySection />
       <Testimonials />
+      <ServiceAreas />
       <PricingSection />
       <ContactForm />
-
     </div>
   );
 }
