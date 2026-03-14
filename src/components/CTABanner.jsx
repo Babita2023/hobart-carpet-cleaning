@@ -12,7 +12,7 @@ const CTABanner = () => (
         <Button variant="hero" size="lg" className="text-base" asChild>
           <a href="#contact">Contact Us</a>
         </Button>
-        <Button variant="outline" size="lg" className="text-base border-accent-foreground  text-accent-foreground bg-accent-foreground  hover:bg-accent-foreground" asChild>
+        <Button variant="outline" size="lg" className="text-base" asChild>
           <a href="tel:0413466112"><Phone className="w-5 h-5 mr-2" /> Call +61 413 466 112</a>
         </Button>
       </div>

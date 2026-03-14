@@ -7,7 +7,7 @@ import Testimonials from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
 import CTABanner from "@/components/CTABanner";
-import Test from "@/components/Test";
+
 import PricingSection from "@/components/PriceSection";
 import ServiceAreas from "@/components/ServiceArea";
 
@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <ServicesSection />
-      <Test />
+    
       <WhyChooseUs />
       <CTABanner />
       <GallerySection />
