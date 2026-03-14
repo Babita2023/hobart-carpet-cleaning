@@ -24,7 +24,7 @@ const PriceSection = () => (
       </div>
       <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         {packages.map((p) => (
-          <Card key={p.title} className={`border-0 shadow-card relative ${p.popular ? "ring-2 ring-primary scale-105" : ""}`}>
+          <Card key={p.title} className={`border-0 shadow-card relative overflow-visible ${p.popular ? "ring-2 ring-primary scale-105" : ""}`}>
             {p.popular && (
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 cta-gradient text-accent-foreground text-xs font-bold px-4 py-1 rounded-full">
                 Most Popular

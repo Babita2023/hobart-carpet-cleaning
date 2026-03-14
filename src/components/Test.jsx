@@ -6,7 +6,7 @@ export default function TestBackground() {
         This text should be WHITE on a blue background
       </div>
 
-      <div className="bg-card text-card-foreground p-6 rounded-md border border-border">
+      <div className="bg-card  text-card-foreground p-6 rounded-md border border-border">
         Card Background
       </div>
 

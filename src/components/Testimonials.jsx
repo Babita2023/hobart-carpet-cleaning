@@ -10,7 +10,7 @@ const testimonials = [
 const Stars = () => (
   <div className="flex gap-0.5 mb-3">
     {[...Array(5)].map((_, i) => (
-      <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+      <Star key={i} className="w-4 h-4 fill-current text-accent" />
     ))}
   </div>
 );
@@ -28,7 +28,7 @@ export default function Testimonials() {
           <Card key={t.name} className="border-0 shadow-card">
             <CardContent className="p-6">
               <Stars />
-              <p className="text-foreground/90 mb-4 italic">"{t.text}"</p>
+              <p className="text-foreground opacity-90 mb-4 italic">"{t.text}"</p>
               <p className="text-sm font-semibold text-foreground">{t.name}</p>
               <p className="text-xs text-muted-foreground">{t.location}</p>
             </CardContent>
