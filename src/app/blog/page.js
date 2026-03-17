@@ -1,13 +1,12 @@
-// Shows all blog post
 import Link from "next/link";
 import { blogs } from "../data/blogs";
 
 export default function BlogPage() {
   return (
-    <div className="max-w-6xl mx-auto p-10 grid md:grid-cols-3 gap-6">
+    <div className="max-w-6xl mx-auto p-10 mt-16 mb-10 grid md:grid-cols-3 gap-6">
 
       {blogs.map((blog) => (
-        <div key={blog.slug} className="border p-4 rounded shadow">
+        <div key={blog.slug} className="border rounded-lg p-4 shadow">
 
           <img
             src={blog.image}
@@ -24,8 +23,8 @@ export default function BlogPage() {
           </p>
 
           <Link href={`/blog/${blog.slug}`}>
-            <button className="mt-3 text-blue-600">
-              Read More →
+            <button className="mt-3 text-blue-600 font-semibold">
+              Read Article →
             </button>
           </Link>
 
