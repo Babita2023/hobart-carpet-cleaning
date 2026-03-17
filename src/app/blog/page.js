@@ -6,27 +6,39 @@ export default function BlogPage() {
     <div className="max-w-6xl mx-auto p-10 mt-16 mb-10 grid md:grid-cols-3 gap-6">
 
       {blogs.map((blog) => (
-        <div key={blog.slug} className="border rounded-lg p-4 shadow">
+        <div
+          key={blog.slug}
+          className="border rounded-lg shadow flex flex-col overflow-hidden"
+        >
 
+          {/* Image */}
           <img
             src={blog.image}
             alt={blog.title}
-            className="rounded mb-3"
+            className="h-48 w-full object-cover"
           />
 
-          <h2 className="text-xl font-bold">
-            {blog.title}
-          </h2>
+          {/* Content */}
+          <div className="p-4 flex flex-col flex-grow">
 
-          <p className="text-gray-600">
-            {blog.description}
-          </p>
+            {/* Title */}
+            <h2 className="text-xl font-bold h-14 overflow-hidden">
+              {blog.title}
+            </h2>
 
-          <Link href={`/blog/${blog.slug}`}>
-            <button className="mt-3 text-blue-600 font-semibold">
-              Read Article →
-            </button>
-          </Link>
+            {/* Description */}
+            <p className="text-gray-600 mt-2 h-20 overflow-hidden">
+              {blog.description}
+            </p>
+
+            {/* Button */}
+            <Link href={`/blog/${blog.slug}`}>
+              <button className="mt-auto text-blue-600 font-semibold">
+                Read Article →
+              </button>
+            </Link>
+
+          </div>
 
         </div>
       ))}
