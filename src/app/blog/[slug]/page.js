@@ -23,7 +23,7 @@ export default async function BlogPost({ params }) {
         <p className="mt-2">
           Contact Hobart Premium Cleaning for reliable cleaning services in Hobart.
         </p>
-        <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded">
+        <button className="mt-4 cta-gradient  text-white px-6 py-2 rounded">
           Request Free Quote
         </button>
       </div>

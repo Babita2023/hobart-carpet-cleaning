@@ -3,7 +3,20 @@ import { blogs } from "../data/blogs";
 
 export default function BlogPage() {
   return (
+    <div className="max-w-6xl mx-auto p-10 mt-16 mb-10">
+
+  {/* Heading Section */}
+  <div className="mb-10 text-center">
+    <h1 className="text-3xl md:text-4xl font-bold">
+      Our Latest Blogs
+    </h1>
+    <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+      Discover cleaning tips, home care guides, and expert insights to keep your space fresh, healthy, and spotless.
+    </p>
+  </div>
+
     <div className="max-w-6xl mx-auto p-10 mt-16 mb-10 grid md:grid-cols-3 gap-6">
+      
 
       {blogs.map((blog) => (
         <div
@@ -44,5 +57,7 @@ export default function BlogPage() {
       ))}
 
     </div>
+    </div>
+
   );
 }
